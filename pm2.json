@@ -1,0 +1,12 @@
+{
+  "apps" : [
+    {
+      "name": "hello-stream-root",
+      "exec_interpreter": "python3",
+      "interpreter_args": "-u",
+      "script": "faust",
+      "args": "-A root worker --web-port 30001",
+      "watch": ["root.py", "topics/root.py"]
+    }
+  ]
+}
